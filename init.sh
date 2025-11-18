@@ -32,6 +32,7 @@ ensure_command() {
 
 prepare_path() {
     add_to_path "$HOME_BIN"
+    add_to_path "$HOME/.local/share/atuin/bin"
     add_to_path "/usr/local/go/bin"
     add_to_path "$HOME/go/bin"
     add_to_path "$HOME/bin"
@@ -108,6 +109,7 @@ write_zshrc() {
 typeset -U path
 path=(
     $HOME/.local/bin
+    $HOME/.local/share/atuin/bin
     /usr/local/go/bin
     $HOME/go/bin
     $HOME/bin
