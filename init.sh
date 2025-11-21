@@ -32,9 +32,8 @@ ensure_command() {
 
 prepare_path() {
     add_to_path "$HOME_BIN"
-    add_to_path "$HOME/.local/share/atuin/bin"
+    add_to_path "$HOME/.atuin/bin"
     add_to_path "/usr/local/go/bin"
-    add_to_path "$HOME/go/bin"
     add_to_path "$HOME/bin"
     export PATH
 }
